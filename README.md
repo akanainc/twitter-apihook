@@ -26,7 +26,8 @@ API Hook using Akana's Products to interact with the Twitter API.  Also, integra
     + unzip the com.akana.pso.apihooks.technology.preview_7.2.90.zip (available in this repository) into the /sm70 directory.
     + unzip the com.akana.pso.persistence_7.2.0.zip (available in this repository) into the /sm70 directory.
     + stop all PM and ND nodes
-    + Run the configurator in update mode for all PM and ND instances:
+    + Run the configurator for all PM and ND instances:
+        * for each instance delete the /{akanainstallroot}/{sm7.2}/instances/{instanceName}/cache directory. This is important to do before you run the below command.
         * Run this command, depending on your environment:
             - Windows: `<Gateway base dir>\sm70\bin\startup.bat configurator -Dsilent=true -DdeploymentName=Standalone -Dproperties=C:\\myprops.properties`
             - UNIX/Linux: `<Gateway base dir>/sm70/bin/startup.sh configurator -Dsilent=true -Dproperties=/export/home/username/myprops.properties`
@@ -239,7 +240,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
+   http://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
