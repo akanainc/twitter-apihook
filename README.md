@@ -5,7 +5,7 @@
 [Akana.com](http://akana.com)
 
 ## Twitter-API-Hook
-API Hook using SOA Software's Products to interact with the Twitter API.  Also, integrates with Twitter's OAuth authorization steps.
+API Hook using Akana's Products to interact with the Twitter API.  Also, integrates with Twitter's OAuth authorization steps.
 
 ## Twitter API
 
@@ -35,9 +35,9 @@ API Hook using SOA Software's Products to interact with the Twitter API.  Also, 
             container.instance.name=<instance name, e.g. PM>
             wizard.mode=update
             ```
-    + Using the SOA Admin Console, install the following Plug-ins in each PM container:
+    + Using the Akana Admin Console, install the following Plug-ins in each PM container:
         * Akana PSO Persistence
-    + Using the SOA Admin Console, install the following Plug-ins in each ND container:
+    + Using the Akana Admin Console, install the following Plug-ins in each ND container:
         * Akana APIHooks Enhancements 
     + Restart all PM and ND containers.
 
@@ -75,7 +75,7 @@ API Hook using SOA Software's Products to interact with the Twitter API.  Also, 
 Twitter API offers using 2-legged OAuth2 to consume specific API's.  Akana Software's Twitter API Hook are successfully authenticated using Twitter's OAuth2 API's.
 
 The figure below shows the entire OAuth2 2-Legged Application-Only flow:
-![2-Legged OAuth](https://github.com/soaErikNord/Twitter-API-Hook/blob/master/src/2-leggedOauth.png "2-Legged OAuth")
+![2-Legged OAuth](https://github.com/AkanaInc/Twitter-API-Hook/blob/master/src/2-leggedOauth.png "2-Legged OAuth")
 Steps:
 <br/>
 1-4) The consuming application requests an access token to use Twitter API's via Akana Software's API Gateway.  Twitter expects the api key and api secret to be passed in a Basic Authentication header on the message.  The grant type is a required parameter with the value of 'client_credentials':
@@ -239,7 +239,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+    [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
